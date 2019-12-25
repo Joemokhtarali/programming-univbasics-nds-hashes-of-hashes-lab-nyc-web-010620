@@ -38,10 +38,11 @@ def naming_system
       label: "Phylum",
       sub_category: {
         label: "Class"
+        }
       }
     }
   }
-  
+end 
     # Remember:
   #  Kingdom 
   #  Phylum
@@ -53,4 +54,4 @@ def naming_system
   # So, if we have the "Kingdom" node we should be able to "tunnel" into the
   # HoH all the way to Species!
 
-end
+
