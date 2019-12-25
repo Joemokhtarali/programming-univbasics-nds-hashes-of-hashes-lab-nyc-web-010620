@@ -32,12 +32,12 @@
 # hash[:sub_category][:sub_category][:sub_category][:label]).to eq("Order")
 def naming_system
   hash = {
-      :Kingdom=> {
+      :sub_category=> {
     label: "Kingdom",
     sub_category: {
       label: "Phylum",
       sub_category: {
-        label: "Class"
+        label: "Order"
         }
       }
     }
