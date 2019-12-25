@@ -31,6 +31,7 @@
 # }
 # hash[:sub_category][:sub_category][:sub_category][:label]).to eq("Order")
 # hash[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Genus")
+# hash[:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:sub_category][:label]).to eq("Species")
 def naming_system
   hash = {
       :sub_category=> {
@@ -43,6 +44,12 @@ def naming_system
           label: "Family",
           sub_category: {
             label: "Genus",
+              sub_category: {
+                label: "Species",
+                  sub_category: nil
+                  }
+                }
+              }
             }
           }
         }
