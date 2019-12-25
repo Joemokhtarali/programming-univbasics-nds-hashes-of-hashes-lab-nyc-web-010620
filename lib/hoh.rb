@@ -29,7 +29,7 @@
 #   label: "Species",
 #   sub_category: nil
 # }
-
+# hash[:sub_category][:sub_category][:sub_category][:label]).to eq("Order")
 def naming_system
   hash = {
       :Kingdom=> {
